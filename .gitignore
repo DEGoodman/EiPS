@@ -16,3 +16,6 @@
 
 # system files
 .DS_Store
+
+# development and program output
+word_freqs
