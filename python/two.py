@@ -19,16 +19,21 @@ def read_file():
     Takes a path to a file on the stack and places the entire
     contents of the file back on the stack.
     """
-    # TODO: implement
-    pass
+    f = open(stack.pop())
+    # push the results onto the stack
+    stack.append([f.read()])
+    f.close()
 
 def filter_chars():
     """
     Takes data on the stack and places back a copy with all
     nonalphanumeric chars replaced by a white space.
     """
-    # TODO: implement
-    pass
+    # This is not in style. RE is too high-level, but using it
+    # for doing this fast and short. Push the pattern onto stack
+    stack.append(re.compile('[\W_]+'))
+    # Push the result onto the stack
+    stack.append([stack.pop().sub(' ', stack.pop()[0]).lower()])
 
 def scan():
     """
@@ -55,7 +60,7 @@ def frequencies():
 
 def sort():
     """
-    Not in "style", left as exercise
+    Not in style, left as exercise
     """
     # TODO: implement
     pass
