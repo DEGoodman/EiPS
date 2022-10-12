@@ -9,7 +9,7 @@ stack = []
 #
 # The heap. Maps names to data (i.e. variables)
 #
-heap = []
+heap = {}
 
 #
 # The new "words" (procedures) of our program
@@ -40,30 +40,73 @@ def scan():
     Takes a string on the stack and scans for words, placing
     the list of words back on the stack    
     """
-    # TODO: implement
-    pass
+    # Again, split() is too high-level for this style, but using
+    # it for doing this fast and short. Left as exercise
+    stack.extend(stack.pop()[0].split())
 
 def remove_stop_words():
     """
     Takes a list of words on the stack and removes stop words.
     """
-    # TODO: implement
-    pass
+    f = open('../static/stop_words.txt')
+    stack.append(f.read().split(','))
+    f.close()
+    # add single-letter words
+    stack[-1].extend(list(string.ascii_lowercase))
+    heap['stop_words'] = stack.pop()
+    # Again, this is too high-level for this style, but using it
+    # for doing this fast and short. Left as exercise.
+    heap['words'] = []
+    while len(stack) > 0:
+        if stack[-1] in heap['stop_words']:
+            stack.pop() # pop it and drop it.
+        else:
+            heap['words'].append(stack.pop()) # pop it, store it.
+    stack.extend(heap['words']) # Load the words onto the stack.
+    del heap['stop_words']; del heap['words'] # not needed.
 
 def frequencies():
     """
     Takes a list of words and returns a dictionary associating
     words with frequencies of occurrence.
     """
-    # TODO: implement
-    pass
+    heap['word_freqs'] = {}
+    # A little flavor of the real Forth style here...
+    while len(stack) > 0:
+        # ...but the following line is not in style, because the
+        # naive implementation would be too slow
+        if stack[-1] in heap['word_freqs']:
+            # Increment the frequency, postfix style: f 1 +
+            stack.append(heap['word_freqs'][stack[-1]]) # push f
+            stack.append(1) # push 1
+            stack.append(stack.pop() + stack.pop()) # add
+        else:
+            stack.append(1) # Push 1 in stack[2]
+        # Load the updated freq back onto the heap
+        heap['word_freqs'][stack.pop()] = stack.pop()
+
+    # Push the result onto the stack
+    stack.append(heap['word_freqs'])
+    del heap['word_freqs'] # We don't need this variable anymore
 
 def sort():
     """
     Not in style, left as exercise
     """
-    # TODO: implement
-    pass
+    stack.extend(sorted(stack.pop().items(), key=operator.
+            itemgetter(1)))
 
 ## The main function
 #
+stack.append(sys.argv[1])
+read_file(); filter_chars(); scan(); remove_stop_words()
+frequencies(); sort()
+
+stack.append(0)
+# Check stack length against 1, because after we process
+# the last word there will be one item left
+while stack[-1] < 25 and len(stack) > 1:
+    heap['i'] = stack.pop()
+    (w, f) = stack.pop(); print(w, '-', f)
+    stack.append(heap['i']); stack.append(1)
+    stack.append(stack.pop() + stack.pop())
