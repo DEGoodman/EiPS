@@ -75,7 +75,7 @@ def frequencies():
     while len(stack) > 0:
         # ...but the following line is not in style, because the
         # naive implementation would be too slow
-        if stack[-1] in heap['word_freqs']:
+        if stack[-1] in heap['word````_freqs']:
             # Increment the frequency, postfix style: f 1 +
             stack.append(heap['word_freqs'][stack[-1]]) # push f
             stack.append(1) # push 1
