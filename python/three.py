@@ -2,6 +2,13 @@
 import sys, string
 import numpy as np
 
+## Constraints
+# - Main data type: array - a fixed-size collection of elements.
+# - No explicit iteration; instead, an array is accessed by high-level,
+#   declarative operations
+# - Computation unfolds as searcg, selection, and transformation of fixed-
+#   size data.
+
 # Example input: "Hello  World!"
 characters = np.array([' ']+list(open(sys.argv[1]).read()) + [' '])
 # Result: array([' ', 'H', 'e', 'l', 'l', 'o', ' ', ' ',

@@ -14,11 +14,8 @@ Exercises in Programming Style implements a relatively trivial program (counting
 | six      | Pipeline                      |
 | seven    | Code Golf                     |
 
-I split this repository by language as the book examples are written in Python and, while I wanted to implement some in other languages, Python is also well suited for tasks like NLP. Anyways, I have a map below to identify which exercies are in which language.
-## map
-
-### python/
-chs 1-4
+I split this repository by language as the book examples are written in Python and, while I wanted to implement some in other languages, Python is also well suited for tasks like NLP.
+For the time being, all chapters can be found in the `python/` directory.
 
 ### static/
 Static files used in the examples. These examples were pulled from the book's github repo located http://github.com/crista/exercises-in-programming-style

@@ -1,6 +1,13 @@
 #!/usr/bin/env python
 import sys, re, operator, string
 
+## Constraints
+# - Existence of a data stack. All operations are done
+#   over data on the stack
+# - Existence of a heap for storing data that's needed for later operations.
+# - Abstraction in the form of user-defined "procedures" (i.e. names bound
+#   to a set of instructions
+
 #
 # The all-important data stack
 #

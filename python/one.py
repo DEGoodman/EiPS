@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 import sys, os, string
 
+## Constraints
+# - very small amount of primary memory, typically orders of magnitude
+#   smaller than the data that needs to be processed/generated.
+# - No identifiers - i.e. no variable names or tagged memory addresses. All
+#   we have is memory that is addressable with numbers.
+
 # Utility for handling the intermediate 'secondary memory'
 def touchopen(filename, *args, **kwargs):
     try:

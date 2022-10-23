@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 import sys, string
 
+## Constraints
+# - No named abstractions.
+# - No, or little, use of libraries.
+
 # the global list of [word, frequency] pairs
 word_freqs = []
 # the list of stop words
