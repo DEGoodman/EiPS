@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import sys, string
+import sys, string, time
 import numpy as np
 
 ## Constraints
@@ -8,6 +8,9 @@ import numpy as np
 #   declarative operations
 # - Computation unfolds as searcg, selection, and transformation of fixed-
 #   size data.
+
+# runtime calc
+start_time = time.time()
 
 # Example input: "Hello  World!"
 characters = np.array([' ']+list(open(sys.argv[1]).read()) + [' '])
@@ -57,3 +60,7 @@ wf_sorted = sorted(zip(uniq, counts), key=lambda t: t[1], reverse=
 
 for w, c in wf_sorted[:25]:
     print(w, '-', c)
+
+
+# final runtime calc
+print("--- %s seconds ---" % (time.time() - start_time))

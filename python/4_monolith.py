@@ -1,9 +1,12 @@
 #!/usr/bin/env python
-import sys, string
+import sys, string, time
 
 ## Constraints
 # - No named abstractions.
 # - No, or little, use of libraries.
+
+# runtime calc
+start_time = time.time()
 
 # the global list of [word, frequency] pairs
 word_freqs = []
@@ -51,3 +54,6 @@ for line in open(sys.argv[1]):
 
 for tf in word_freqs[0:25]:
     print(tf[0], '-', tf[1])
+
+# final runtime calc
+print("--- %s seconds ---" % (time.time() - start_time))

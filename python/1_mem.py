@@ -1,11 +1,14 @@
 #!/usr/bin/env python
-import sys, os, string
+import sys, os, string, time
 
 ## Constraints
 # - very small amount of primary memory, typically orders of magnitude
 #   smaller than the data that needs to be processed/generated.
 # - No identifiers - i.e. no variable names or tagged memory addresses. All
 #   we have is memory that is addressable with numbers.
+
+# runtime calc
+start_time = time.time()
 
 # Utility for handling the intermediate 'secondary memory'
 def touchopen(filename, *args, **kwargs):
@@ -129,3 +132,6 @@ for tf in data[0:25]: # elimination of symbol tf is exercise
         print(tf[0], '-', tf[1])
 # We're done
 word_freqs.close()
+
+# final runtime calc
+print("--- %s seconds ---" % (time.time() - start_time))

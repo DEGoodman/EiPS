@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import sys, re, operator, string
+import sys, re, operator, string, time
 
 ## Constraints
 # - Larger problem is decomposed using functional abstraction.
@@ -7,6 +7,9 @@ import sys, re, operator, string
 # - no shared state
 # - Larger problem composes functions one after the other,
 #    chaining everything together
+
+# runtime calc
+start_time = time.time()
 
 def read_file(path_to_file):
     """
@@ -76,3 +79,6 @@ def print_all(word_freqs):
 # The main function
 #
 print_all(sort(frequencies(remove_stop_words(scan(filter_chars_and_normalize(read_file(sys.argv[1]))))))[0:25])
+
+# final runtime calc
+print("--- %s seconds ---" % (time.time() - start_time))

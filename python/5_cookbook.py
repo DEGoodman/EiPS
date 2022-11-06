@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import sys, string
+import sys, string, time
 
 ## Constraints
 # - No long jumps.
@@ -8,6 +8,9 @@ import sys, string
 # - Procedures may share state in the form of global variables.
 # - The larger problem is solved by aolying the procedures, one after the
 #   other, that change, or add to, the shared state.
+
+# runtime calc
+start_time = time.time()
 
 # The shared mutable data
 data = []
@@ -92,3 +95,6 @@ sort()
 
 for tf in word_freqs[0:25]:
     print(tf[0], '-', tf[1])
+
+# final runtime calc
+print("--- %s seconds ---" % (time.time() - start_time))

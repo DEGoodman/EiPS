@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import sys, re, operator, string
+import sys, re, operator, string, time
 
 ## Constraints
 # - Existence of a data stack. All operations are done
@@ -7,6 +7,9 @@ import sys, re, operator, string
 # - Existence of a heap for storing data that's needed for later operations.
 # - Abstraction in the form of user-defined "procedures" (i.e. names bound
 #   to a set of instructions
+
+# runtime calc
+start_time = time.time()
 
 #
 # The all-important data stack
@@ -82,7 +85,7 @@ def frequencies():
     while len(stack) > 0:
         # ...but the following line is not in style, because the
         # naive implementation would be too slow
-        if stack[-1] in heap['word````_freqs']:
+        if stack[-1] in heap['word_freqs']:
             # Increment the frequency, postfix style: f 1 +
             stack.append(heap['word_freqs'][stack[-1]]) # push f
             stack.append(1) # push 1
@@ -117,3 +120,6 @@ while stack[-1] < 25 and len(stack) > 1:
     (w, f) = stack.pop(); print(w, '-', f)
     stack.append(heap['i']); stack.append(1)
     stack.append(stack.pop() + stack.pop())
+
+# final runtime calc
+print("--- %s seconds ---" % (time.time() - start_time))
