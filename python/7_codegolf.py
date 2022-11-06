@@ -15,8 +15,3 @@ for (w, c) in counts.most_common(25):
 
 # final runtime calc
 print("--- %s seconds ---" % (time.time() - start_time))
-
-
-
-
-
