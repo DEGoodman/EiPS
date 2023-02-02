@@ -1,11 +1,11 @@
 ## Setup
 Written in python 3, isolated environment with virtualenv:
 ```
-$python3 -m venv env
+$python3 -m venv venv
 ```
 
 Activate the shell with
-```source env/bin/activate```
+```source venv/bin/activate```
 
 # Implementation notes
 After executing a few of these programs, I noticed several of them were incredibly slow.
