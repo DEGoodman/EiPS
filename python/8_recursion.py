@@ -1,5 +1,9 @@
 import re, sys, operator, time
 
+## Constraints
+# - Problem modeled via induction.
+#   - Base case (n0 and then n+1 rule)
+
 # runtime calc
 start_time = time.time()
 
