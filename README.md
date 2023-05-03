@@ -15,6 +15,9 @@ Exercises in Programming Style implements a relatively trivial program (counting
 | seven    | Code Golf                     |
 | eight    | Recursion                     |
 | nine     | Kick Forward                  |
+| ten      | The One                       |
+| eleven   | Things                        |
+
 
 ## Map
 ### python/
