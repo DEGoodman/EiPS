@@ -20,6 +20,8 @@ Exercises in Programming Style implements a relatively trivial program (counting
 |     twelve     |           Letterbox           |
 |    thirteen    |          Closed Maps          |
 |    fourteen    |        Abstract Things        |
+|    fifteen     |           Hollywood           |
+
 
 ## Map
 ### python/
