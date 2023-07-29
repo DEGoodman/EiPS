@@ -21,7 +21,7 @@ Exercises in Programming Style implements a relatively trivial program (counting
 |    thirteen    |          Closed Maps          |
 |    fourteen    |        Abstract Things        |
 |    fifteen     |           Hollywood           |
-
+|    sixteen     |        Bulletin Board         |
 
 ## Map
 ### python/
