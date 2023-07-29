@@ -1,4 +1,12 @@
 import sys, re, operator, string, time
+
+## Constraints
+# - The larger problem is decomposed int `things` that make sense for the
+#     problem domain.
+# - Each `thing` exposes only a single procedure (ability to receive & dipatch
+#     messages that are sent to it.
+# - Message dispatch can result in sending the message to another capsule.
+
 class DataStorageManager():
     """ Models the contents of the file """
     _data = ''

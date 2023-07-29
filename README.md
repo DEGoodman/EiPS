@@ -18,7 +18,7 @@ Exercises in Programming Style implements a relatively trivial program (counting
 | ten      | The One                       |
 | eleven   | Things                        |
 | twelve   | Letterbox                     |
-
+| thirteen | Closed Maps                   |
 
 ## Map
 ### python/
