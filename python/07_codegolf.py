@@ -1,5 +1,8 @@
 #!/usr/bin/env python
-import collections, re, sys, time
+import collections
+import re
+import sys
+import time
 
 ## Constraints
 # - as few lines as possible

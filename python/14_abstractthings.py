@@ -1,5 +1,6 @@
 import abc, sys, re, operator, string, time
 
+
 ## Constraints
 # - larger problem decomposed in `abstract things` for the problem domain
 # - each abstract thing is described by wjat operations the things of that
@@ -93,6 +94,7 @@ class WordFrequencyManager:
 IDataStorage.register(subclass=DataStorageManager)
 IStopWordFilter.register(subclass=StopWordManager)
 IWordFrequencyCounter.register(subclass=WordFrequencyManager)
+
 
 #
 # The application object
