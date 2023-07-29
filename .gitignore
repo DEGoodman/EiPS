@@ -19,3 +19,6 @@
 
 # development and program output
 word_freqs
+
+# IDE configs
+.idea/

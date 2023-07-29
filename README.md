@@ -4,21 +4,22 @@ Exercises in Programming Style, 2nd ed
 # Intro
 Exercises in Programming Style implements a relatively trivial program (counting word frequencies) in a number of different programming paradigms. See the **map** section below for implementations. The paradigms are as follows:
 
-|program number|style|
-|:--------:|:-----------------------------:|
-| one      | memory constraints, no idents |
-| two      | stacks, heaps, "procedures"   |
-| three    | Arrays                        |
-| four     | Monolithic                    |
-| five     | Cookbook                      |
-| six      | Pipeline                      |
-| seven    | Code Golf                     |
-| eight    | Recursion                     |
-| nine     | Kick Forward                  |
-| ten      | The One                       |
-| eleven   | Things                        |
-| twelve   | Letterbox                     |
-| thirteen | Closed Maps                   |
+| program number |             style             |
+|:--------------:|:-----------------------------:|
+|      one       | memory constraints, no idents |
+|      two       |  stacks, heaps, "procedures"  |
+|     three      |            Arrays             |
+|      four      |          Monolithic           |
+|      five      |           Cookbook            |
+|      six       |           Pipeline            |
+|     seven      |           Code Golf           |
+|     eight      |           Recursion           |
+|      nine      |         Kick Forward          |
+|      ten       |            The One            |
+|     eleven     |            Things             |
+|     twelve     |           Letterbox           |
+|    thirteen    |          Closed Maps          |
+|    fourteen    |        Abstract Things        |
 
 ## Map
 ### python/
