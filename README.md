@@ -32,7 +32,8 @@ Exercises in Programming Style implements a relatively trivial program (counting
 |    nineteen    |            Aspects             |
 |     twenty     |            Plugins             |
 |    ---VI---    |           Adversity            |
-|   twentyone    |         Constructivist         |
+|   twenty-one   |         Constructivist         |
+|   twenty-two   |            Tantrum             |
 
 ## Map
 ### python/
