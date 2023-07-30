@@ -4,36 +4,37 @@ Exercises in Programming Style, 2nd ed
 # Intro
 Exercises in Programming Style implements a relatively trivial program (counting word frequencies) in a number of different programming paradigms. See the **map** section below for implementations. The paradigms are as follows:
 
-| program number |             style              |
-|:--------------:|:------------------------------:|
-|    ---I---     |           Historical           |
-|      one       | memory constraints, no idents  |
-|      two       |  stacks, heaps, "procedures"   |
-|     three      |             Arrays             |
-|    ---II---    |          Basic Styles          |
-|      four      |           Monolithic           |
-|      five      |            Cookbook            |
-|      six       |            Pipeline            |
-|     seven      |           Code Golf            |
-|   ---III---    |      Function Composition      |
-|     eight      |           Recursion            |
-|      nine      |          Kick Forward          |
-|      ten       |            The One             |
-|    ---IV---    | Objects & Object Interactions  |
-|     eleven     |             Things             |
-|     twelve     |           Letterbox            |
-|    thirteen    |          Closed Maps           |
-|    fourteen    |        Abstract Things         |
-|    fifteen     |           Hollywood            |
-|    sixteen     |         Bulletin Board         |
-|    ---V---     | Reflection and Metaprogramming |
-|   seventeen    |         Introspective          |
-|    eighteen    |           Reflective           |
-|    nineteen    |            Aspects             |
-|     twenty     |            Plugins             |
-|    ---VI---    |           Adversity            |
-|   twenty-one   |         Constructivist         |
-|   twenty-two   |            Tantrum             |
+|  program number   |             style              |
+|:-----------------:|:------------------------------:|
+|      ---I---      |           Historical           |
+|        one        | memory constraints, no idents  |
+|        two        | stacks, heaps, "procedures"    |
+|       three       |             Arrays             |
+|     ---II---      |          Basic Styles          |
+|       four        |           Monolithic           |
+|       five        |            Cookbook            |
+|        six        |            Pipeline            |
+|       seven       |           Code Golf            |
+|     ---III---     |      Function Composition      |
+|       eight       |           Recursion            |
+|       nine        |          Kick Forward          |
+|        ten        |            The One             |
+|     ---IV---      | Objects & Object Interactions  |
+|      eleven       |             Things             |
+|      twelve       |           Letterbox            |
+|     thirteen      |          Closed Maps           |
+|     fourteen      |        Abstract Things         |
+|      fifteen      |           Hollywood            |
+|      sixteen      |         Bulletin Board         |
+|      ---V---      | Reflection and Metaprogramming |
+|     seventeen     |         Introspective          |
+|     eighteen      |           Reflective           |
+|     nineteen      |            Aspects             |
+|      twenty       |            Plugins             |
+|     ---VI---      |           Adversity            |
+|    twenty-one     |         Constructivist         |
+|    twenty-two     |            Tantrum             |
+|   twenty-three    |       Passive Aggressive       |
 
 ## Map
 ### python/
