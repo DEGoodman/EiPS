@@ -7,7 +7,8 @@ import sys, re, operator, string, os, time
 # start runtime calc
 start_time = time.time()
 
-# I'm not positive why these two things are described as "down-to-earth things" in the book
+# Python supports reflection with restrictions. Taking care of two things the "boring" way
+# as it would be very awkward to implement reflectively
 stops = set(
     open("../static/stop_words.txt").read().split(",") + list(string.ascii_lowercase)
 )
@@ -24,7 +25,8 @@ def frequencies_imp(word_list):
 
 
 #
-# functions as strings
+# functions as strings.
+# contents depend on whether or not the user has entered an argument
 #
 if len(sys.argv) > 1:
     extract_words_func = "lambda name : [x.lower() for x in re.split('[^a-zA-Z]+', open(name).read()) if len(x) > 0 and x.lower() not in stops]"
