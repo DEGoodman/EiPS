@@ -36,3 +36,5 @@ Unless otherwise noted, these programs ran on a Mac M1 Pro w/ 16GB mem
 - 21: 0.141 seconds
 - 22: 0.141 seconds
 - 23: 0.142 seconds
+- 24: 0.140 seconds
+- 25: 0.142 seconds
