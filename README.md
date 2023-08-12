@@ -40,6 +40,9 @@ Exercises in Programming Style implements a relatively trivial program (counting
 |   ---VII---    |         DATA-CENTRIC          |
 |   twenty six   |       Persistent Tables       |
 |  twenty seven  |          Spreadsheet          |
+|  twenty eight  |          Lazy Rivers          |
+|   ---VIII---   |          CONCURRENCY          |
+|  twenty nine   |            Actors             |
 
 ## Map
 ### python/
